@@ -1,0 +1,135 @@
+   .navBarTopLi {
+    display: inline-block;
+    vertical-align: top;
+    padding: 2%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .header {
+    background-color: maroon;
+    color: white;
+    border: 2px solid black;
+           }
+   
+  .heroImg {
+    height: auto;
+    width: 100%;
+      }
+
+.logoImg{
+  width: 20%;
+  height: auto;
+  margin: 0 5%;
+}
+
+
+.headerText{
+  background-color: maroon;
+  height: 50px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 0 0 0;
+  }
+.GiftCard {
+  display: inline-block;
+  vertical-align: top;
+  padding: 2%;
+}
+  
+  *,
+  *::before,
+  *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  .footer{
+    background-color: maroon;
+    color: white;
+    padding: 10px 0 0 2%;
+
+  }
+  .bottomNav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+    grid-row-gap: 10px;
+    text-align: left;
+    text-decoration: none;
+   }
+  
+  hr{
+    width: 40%;
+    margin: 2% 0;
+
+  }
+  .CopyRight{
+    text-align: center;
+    padding: 10px 0 0 2%;
+ 
+  }
+  .cdLayout{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2%;
+    margin: 2% 0;
+    padding: 1 2%;
+    background-color: white;
+  }
+  .textCD {
+    padding: 1% 3%;
+    text-align: justify;
+  }
+  
+  .imgSize {
+    width: 100%;
+    height: auto;
+  }
+  
+  .background {
+    background-color: rgb(48,3,3);
+    padding: 2%;
+  }
+.grayFont {
+  color: gray;
+  font-size: 20px;
+
+}
+
+.bigFont {
+  font-size: 30px;
+}
+.button {
+  border: 3px solid black;
+  background-color: white;
+  padding: 15px 25px;
+  margin: 0 0 10px 0;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.button:focus{
+  outline: dotted 3px rgb(26,53,206);
+}
+.footerText{
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .cdLayout {
+      grid-template-columns: 1fr;
+
+  }
+  .bottomNav {
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+  text-align: center;
+}
+hr{
+  width: 100%;
+}
+.bottomElephant {
+  margin: 5% 15%;
+}
+}
