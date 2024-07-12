@@ -3,6 +3,8 @@
 <head>
     <title>"The Elephant Room"    </title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
 <header>
@@ -28,20 +30,20 @@
 <div>
 <h2> Gift Cards</h2><br>
 <p>Give your friends the gift of authentic jazz</p><br>
-<button type="button" class="button"> Buy A Gift Card</button>
-    </div></div>
+<button onclick="myFunction()" type="button" class="button"> Buy A Gift Card</button>
+<p id="demo"></p>  </div></div>
     <div class="cdLayout">
-<img src="../UX_UI_HW_17/images/CD ViewAliveElph.png" class="imgSize" alt="Image of Jon Brondell on the front cover and back cover states CD was recorded at the Elephant Room on 2/9/and 3/7/2010. It is produced and engineered by Mark Sarisky, assistant engineer  is Matt Schneiderman, executive producer is Michael Mordecai, mastered by Nick Landis at Terra Nova Digital Audio, Inc. Austin, Texas. Original cover phot by Kevin Remme, Design by Laura Mordecai, Layout by Matteskey.">
+<img src="./images/CD ViewAliveElph.png" class="imgSize" alt="Image of Jon Brondell on the front cover and back cover states CD was recorded at the Elephant Room on 2/9/and 3/7/2010. It is produced and engineered by Mark Sarisky, assistant engineer  is Matt Schneiderman, executive producer is Michael Mordecai, mastered by Nick Landis at Terra Nova Digital Audio, Inc. Austin, Texas. Original cover phot by Kevin Remme, Design by Laura Mordecai, Layout by Matteskey.">
 <div class="textCD">
 <h2 class="bigFont">Alive at the Elephant: CD</h2><br>
 <h2 class="grayFont">by Jon Blondell</h2>
 <br>
 <p>Nine great jazz tracks interpreted as only the monster, Jon Blondell,  can do!  This 9 track album, recorded in 2010 features Carter Arrington  on guitar, Jeff Hellmer on piano, John Fremgen on bass, and J.J. Johnson  on drums. To call this an album of "jazz standards" would be sorely remiss.  Tracks like the Doors' "Riders On the Storm" and "In Walked Bo"  are not that, but then again, "All the Things You Are" and "St. Thomas" are certainly standards but in no way "standard".    
 </p><br>
-<button type="button" class="button"> Add to Card: $9.99</button>
-    </div></div>
+<button onclick="thankyouFunction()" type="button" class="button"> Add to Card: $9.99</button>
+  <p id="thankyou1"></p>  </div></div>
     <div class="cdLayout">
-<img src="../UX_UI_HW_17/images/CDCardWhoCD.png" class="imgSize" alt="The front cover states the album title of Who? and Jazzaholics on top with the names of STephen Dominguez, Benjamin Irom, Thomas Machalek, Mike Kuenning. The back cover features the CD tracks from 1. Who? (4:19), 2. Chinch (7:12), 3. All Things Made New (6:16), 4. A Nod to Cee Cee (6:07), 5. Soylent Blue (5:51), 6. Allegro Con Fusion (10:13), 7. Knot Write Music (8:14), 8. What? (10:34), 9. Boilin'...Indeed! (6:01). Copyright 1997 Music Works STudio, Austin, TX.">
+<img src="./images/CDCardWhoCD.png" class="imgSize" alt="The front cover states the album title of Who? and Jazzaholics on top with the names of STephen Dominguez, Benjamin Irom, Thomas Machalek, Mike Kuenning. The back cover features the CD tracks from 1. Who? (4:19), 2. Chinch (7:12), 3. All Things Made New (6:16), 4. A Nod to Cee Cee (6:07), 5. Soylent Blue (5:51), 6. Allegro Con Fusion (10:13), 7. Knot Write Music (8:14), 8. What? (10:34), 9. Boilin'...Indeed! (6:01). Copyright 1997 Music Works STudio, Austin, TX.">
 <div class="textCD">
 <h2 class="bigFont"> Who? CD</h2><br>
 <h2 class="grayFont">Jazzaholics</h2>
@@ -51,7 +53,7 @@
 <button type="button" class="button"> Add to Card: $9.99</button>
     </div></div>
     <div class="cdLayout">
-<img src="../UX_UI_HW_17/images/CD ViewCardVariousArtistCD.png" class="imgSize" alt="CD front cover features the elephant room logo, a trumpet and saxophone. The back cover features 4 tracks: 1. Country Club Blues, 6 minutes 37 seconds with Tony Campise on Tenor Saxophone, James Polk on Piano, Jon Blondell on Bass and Steve Summer on Drums. 2. Night and Day, 6 minutes and 44 seconds with John Mills on Tenor Saxophone, James Polk Piano, Steve Zirkel Bass and Dexter Walker on Drums. 3. Round Midnight, 8 minutes and 51 seconds. Bob Meyer on Flugelhorn, James Polk on Piano, Jon Blondell Bass and Steve Summer on Drums. 4. All Blues, 8 minutes and 38 seconds with Tomas Ramirez on Tenor Saxophone, Michael Mordecai on Trombone, Doug Hall on Keyboards, Rene Mesritz Bass and Steve Summer on Drums.">
+<img src="./images/CD ViewCardVariousArtistCD.png" class="imgSize" alt="CD front cover features the elephant room logo, a trumpet and saxophone. The back cover features 4 tracks: 1. Country Club Blues, 6 minutes 37 seconds with Tony Campise on Tenor Saxophone, James Polk on Piano, Jon Blondell on Bass and Steve Summer on Drums. 2. Night and Day, 6 minutes and 44 seconds with John Mills on Tenor Saxophone, James Polk Piano, Steve Zirkel Bass and Dexter Walker on Drums. 3. Round Midnight, 8 minutes and 51 seconds. Bob Meyer on Flugelhorn, James Polk on Piano, Jon Blondell Bass and Steve Summer on Drums. 4. All Blues, 8 minutes and 38 seconds with Tomas Ramirez on Tenor Saxophone, Michael Mordecai on Trombone, Doug Hall on Keyboards, Rene Mesritz Bass and Steve Summer on Drums.">
 <div class="textCD">
 <h2 class="bigFont"> Live at the Elephant Room: CD</h2><br>
 <h2 class="grayFont">Various Austin Artists</h2>
@@ -100,5 +102,12 @@
 <img src="./images/TwitterXtwitter.png"    alt="Twitter logo">
 </div></div>
 <div class="CopyRight">Copyright @2024 - Elephant Room</div></footer>
+
+<div class="preloader">
+    <img src="images/Performers-PNG-Cutout.png">
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="main.js"></script>
+  
 </body>
 </html>
